@@ -309,12 +309,35 @@
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script>
         var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
+          slidesPerView: 1,
           spaceBetween: 20,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
+          breakpoints: {
+          
+          600: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          900: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
         });
       </script>
 
