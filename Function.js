@@ -147,16 +147,16 @@ function google_ads_service() {
 
 
 
-function home_btn() {
-    let homebtn = document.querySelector('.homebtn');
-    let homebtn_second = document.querySelector('.homebtn-second');
+// function home_btn() {
+//     let homebtn = document.querySelector('.homebtn');
+//     let homebtn_second = document.querySelector('.homebtn-second');
 
-    if (homebtn) {
-        homebtn.style.color = '#01eefe';
-        homebtn_second.classList.add('w-full');
-        homebtn_second.classList.add('left-0');
-    }
-}
+//     if (homebtn) {
+//         homebtn.style.color = '#01eefe';
+//         homebtn_second.classList.add('w-full');
+//         homebtn_second.classList.add('left-0');
+//     }
+// }
 
 
 

@@ -27,12 +27,12 @@
 
 
       <div class="rounded-[10px] bg-[#fff] max-w-[420px] w-full p-[12px] fixed -top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-10 popup transition-five-second ">
-        <span class="bg-[#01eefe] rounded-[50%] ml-[6px] h-[110px] w-[110px] flex items-center justify-center absolute translate-y-[50%] -translate-x-[50%] -top-[36%] left-[50%] ">
-          <i class="fa-solid fa-check text-[70px] text-[#fff] "></i>
+        <span class="bg-[#01eefe] rounded-[50%] ml-[6px] h-[100px] md:h-[110px] w-[100px] md:w-[110px] flex items-center justify-center absolute translate-y-[50%] -translate-x-[50%] -top-[36%] left-[50%] ">
+          <i class="fa-solid fa-check text-[50px] md:text-[70px] text-[#fff] "></i>
         </span>
-        <div class="px-[20px] " >
-          <h2 class=" text-[32px] font-[600] text-center text-[#313131] pt-[80px] " >Thank You!</h2>
-          <p class="text-[#797979] text-center text-[15px] mt-[10px] ">Your message has been successfully submitted. Our team will contact you as soon as possible. Thanks!</p>
+        <div class="px-[8px] md:px-[20px] " >
+          <h2 class=" text-[24px] md:text-[32px] font-[600] text-center text-[#313131] pt-[80px] " >Thank You!</h2>
+          <p class="text-[#797979] text-center text-[13px] md:text-[15px] mt-[10px] ">Your message has been successfully submitted. Our team will contact you as soon as possible. Thanks!</p>
         </div>
         <div onclick="closePopup()" class=" rounded-[7px] select-none font-[600] w-full flex items-center mt-[42px] justify-center py-[9px] text-[#fff] cursor-pointer bg-[#01eefe] ">
           Ok
@@ -135,7 +135,7 @@
     <!--  -->
 
     <section id="services" class=" w-full  ">
-        <div class="max-w-[1240px] mx-auto px-[8px] sm:px-[12px] py-[60px] ">
+        <div class="max-w-[1240px] mx-auto sm:px-[8px] sm:px-[12px] py-[60px] ">
         <h2 class=" text-[24px] md:text-[28px] font-[800] text-[#fff] text-center ">Our <span class="text-[#01eefe] ">Services</span></h2>
           <div class="flex items-center responsive gap-[12px] md:gap-[16px] flex-wrap justify-center py-[32px] ">
             <div class="swiper mySwiper max-w-[1240px] mx-auto h-[400px]  ">
@@ -316,7 +316,10 @@
             clickable: true,
           },
           breakpoints: {
-          
+            300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          }, 
           600: {
             slidesPerView: 1,
             spaceBetween: 20,

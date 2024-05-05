@@ -210,6 +210,13 @@ body::-webkit-scrollbar {
     }
   }
 
+  @media ( max-width: 400px ) {
+    .responsive{
+      padding-left:8px ;
+    }
+  }
+
+
 
   html,
     body {
