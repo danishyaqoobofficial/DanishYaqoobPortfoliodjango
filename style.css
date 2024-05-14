@@ -246,5 +246,10 @@ body::-webkit-scrollbar {
 }
 
 @media ( max-width: 1030px ) {
-  
+  .client_hidden{
+    display: none !important;
+  }
+  .client_block{
+    display: block !important;
+  }
 }
