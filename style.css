@@ -199,25 +199,6 @@ body::-webkit-scrollbar {
   }
 
 
-
-
-  
-  
-  
-  @media ( max-width: 500px ) {
-    .responsive{
-      padding-left:22px ;
-    }
-  }
-
-  @media ( max-width: 400px ) {
-    .responsive{
-      padding-left:8px ;
-    }
-  }
-
-
-
   html,
     body {
       position: relative;
@@ -244,3 +225,26 @@ body::-webkit-scrollbar {
       height: 100%;
       object-fit: cover;
     }
+
+
+
+/*  */
+/* Responsiveness */
+/*  */
+
+
+@media ( max-width: 500px ) {
+  .responsive{
+    padding-left:22px ;
+  }
+}
+
+@media ( max-width: 400px ) {
+  .responsive{
+    padding-left:8px ;
+  }
+}
+
+@media ( max-width: 1030px ) {
+  
+}
