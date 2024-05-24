@@ -1,6 +1,4 @@
-
 const form = document.querySelector('.form_main');
-
 
 function send_message() {
     let first_name = document.querySelector('.first_name'.trim());
@@ -110,16 +108,6 @@ function dropdown_func() {
 
 
 
-
-
-
-
-
-
-
-
-
-
 function web_development_service() {
     let message_box = document.querySelector('.message-box');
 
@@ -168,10 +156,3 @@ function google_ads_service() {
 //         homebtn_second.classList.add('left-0');
 //     }
 // }
-
-
-
-
-
-
-
