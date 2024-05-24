@@ -68,28 +68,11 @@ body::-webkit-scrollbar {
     -webkit-appearance: none;
     margin: 0;
   }
-  
-  
-  
-  
-  
-  @media (max-width:400px) {
-    .input-responsive{
-      flex-direction: column;
-    }
-    .image{
-      width: 300px;
-    }
-  }
-  
-  
-  
-  
+
+
   /*  */
   /*  */
-  
-  
-  
+
   
   .client_box:nth-last-child(2),
   .client_box:nth-last-child(3),
@@ -251,5 +234,14 @@ body::-webkit-scrollbar {
   }
   .client_block{
     display: block !important;
+  }
+}
+
+@media (max-width:400px) {
+  .input-responsive{
+    flex-direction: column;
+  }
+  .image{
+    width: 300px;
   }
 }
