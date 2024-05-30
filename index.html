@@ -86,9 +86,9 @@
     <Section id="home" class=" w-full">
         <div class="flex gap-[36px] items-center max-w-[1240px] lg:flex-row flex-col px-[14px] sm:px-[20px] mx-auto pt-[40px] sm:pt-[80px] md:pt-[100px] ">
             <div class="flex-1 ">
-            <h3 class="text-[20px] md:text-[22px] text-[#fff] font-[700] ">Hello, it&apos;s Me</h3>
-            <h2 class="text-[40px] md:text-[50px] text-[#fff] font-[900] ">Danish Yaqoob</h2>
-            <h2 class="text-[20px] md:text-[25px] text-[#fff] font-[700] flex items-center gap-[4px] line-clamp-1 "><p class=" whitespace-nowrap">and i&apos;m a</p> <p class="text-[#01eefe] line-clamp-1 "> Frontend Web Developer</p></h2>
+            <h3 class="text-[17px] sm:text-[20px] md:text-[22px] text-[#fff] font-[700] ">Hello, it&apos;s Me</h3>
+            <h2 class="text-[34px] sm:text-[38px] md:text-[50px] text-[#fff] font-[900] ">Danish Yaqoob</h2>
+            <h2 class="text-[17px] sm:text-[20px] md:text-[25px] text-[#fff] font-[700] flex items-center gap-[4px] line-clamp-1 "><p class=" whitespace-nowrap">and i&apos;m a</p> <p class="text-[#01eefe] line-clamp-1 "> Frontend Web Developer</p></h2>
             <p class="text-[#ffffffbe] text-[12px] md:text-[13px] sm:text-[15px] mt-[16px] md:mt-[20px] font-[500] ">Crafting intuitive user interfaces with precision and creativity, bringing concepts to life through code and design. Dedicated to optimizing user experiences with responsive, interactive web solutions.</p>
             <div class="flex items-center gap-[8px] sm:gap-[10px] md:gap-[12px] mt-[22px] ">
                 <a target="blank" href="https://wa.me/+923017735045" class="rounded-[50%] border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center h-[28px] md:h-[30px] w-[28px] md:w-[30px] "><i class="fa-brands fa-whatsapp font-black text-[#01eefe] text-[14px] md:text-[16px] "></i></a>
@@ -366,10 +366,14 @@
           spaceBetween: 20,
           pagination: {
             el: ".swiper-pagination",
-            clickable: true,
+            // clickable: true,
           },
+          autoplay: {
+                delay: 1900,
+                disableOnInteraction: false,
+            },
           breakpoints: {
-            300: {
+            100: {
             slidesPerView: 1,
             spaceBetween: 20,
           }, 
