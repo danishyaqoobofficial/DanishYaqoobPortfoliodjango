@@ -156,3 +156,22 @@ function google_ads_service() {
 //         homebtn_second.classList.add('left-0');
 //     }
 // }
+
+
+
+let header = document.querySelector('.header');
+let sticky = header.offsetTop;
+
+window.addEventListener('scroll' , () =>{
+    // console.log(sticky);
+    if (window.pageYOffset > sticky) {
+        header.classList.add('!shadow-md')
+        header.classList.add('border-b')
+        header.classList.add('bg-[#323846]')
+    }else{
+        header.classList.remove('!shadow-md')
+        header.classList.remove('border-b')
+        header.classList.remove('bg-[#323846]')
+
+    }
+})
