@@ -169,9 +169,6 @@ body::-webkit-scrollbar {
     animation: scroll 20s linear infinite;
   }
   
-  
-  
-  
   .remove_margin{
     margin: 0px !important;
   }
