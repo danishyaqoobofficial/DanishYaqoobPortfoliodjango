@@ -9,14 +9,12 @@ function send_message() {
 
     let Popup = document.querySelector('.popup');
 
- 
     const bodyMessage = `First Name : ${first_name.value.trim()} <br>
     last Name : ${last_name.value.trim()} <br>
     Phone Number : ${number.value.trim()} <br>
     Email : ${email.value.trim()} <br>
     Message : ${message.value.trim()} <br>
     `
-
 
     if (first_name.value === '') {
         first_name.style.borderColor = 'red';
@@ -66,7 +64,6 @@ function send_message() {
     }
 }
 
-
 function closePopup() {
     let first_name = document.querySelector('.first_name');
     let last_name = document.querySelector('.last_name');
@@ -83,11 +80,7 @@ function closePopup() {
     message.value = '';
 }
 
-
-
 let value = true;
-
-
 
 function dropdown_func() {
     let main_dropdown = document.querySelector('.main-dropdown');
@@ -104,9 +97,6 @@ function dropdown_func() {
         icon.classList.remove('fa-xmark')
     }
 }
-
-
-
 
 function web_development_service() {
     let message_box = document.querySelector('.message-box');
@@ -144,8 +134,6 @@ function google_ads_service() {
     message_box.value = '"Are you available to provide Google Ads services? We are interested in maximizing our online presence and would like to explore advertising options."'
 }
 
-
-
 // function home_btn() {
 //     let homebtn = document.querySelector('.homebtn');
 //     let homebtn_second = document.querySelector('.homebtn-second');
@@ -156,8 +144,6 @@ function google_ads_service() {
 //         homebtn_second.classList.add('left-0');
 //     }
 // }
-
-
 
 let header = document.querySelector('.header');
 let sticky = header.offsetTop;
