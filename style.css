@@ -1,13 +1,11 @@
 
-body::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     width: 6px;
   }
-  
-  
+
   body::-webkit-scrollbar-track {
     background: #20242d;
   }
-  
   
   body::-webkit-scrollbar-thumb {
     background: #01eefe;
@@ -15,32 +13,26 @@ body::-webkit-scrollbar {
     cursor: pointer !important;
   }
   
-  
   body::-webkit-scrollbar-thumb:hover {
     background: #596070;
   }
   
-  
-  
   html {
     scroll-behavior: smooth;
   }
-  
-  
+
   body{
     background-color: #20242d;
     scroll-behavior: smooth !important;
   }
 
-
-  .transition-two-second{
+.transition-two-second{
     transition: all 0.2s ease-in-out;
 }
 
 .transition-three-second{
     transition: all 0.3s ease-in-out;
 }
-
 
 .transition-five-second{
   transition: all 0.5s ease-in-out;
@@ -50,14 +42,9 @@ body::-webkit-scrollbar {
     transform: scale(1.2);
 }
 
-
-
 .transorm-scale1:hover{
     transform: scale(1.1);
   }
-  
-  
-  
   
   .shadow:hover{
     box-shadow: #01eefe 0px 22px 70px 4px;
@@ -69,18 +56,15 @@ body::-webkit-scrollbar {
     margin: 0;
   }
 
-
   /*  */
   /*  */
 
-  
   .client_box:nth-last-child(2),
   .client_box:nth-last-child(3),
   .client_box:nth-last-child(5),
   .client_box:nth-last-child(4){
     border-bottom: 1px solid #596070;
   }
-  
   
   .client_box:nth-last-child(8),
   .client_box:nth-last-child(7),
@@ -118,7 +102,6 @@ body::-webkit-scrollbar {
     opacity: 0;
   }
   
-  
   .animated_box::before{
     transition: all 130ms;
     content: '';
@@ -152,16 +135,14 @@ body::-webkit-scrollbar {
     animation: BeforeClassHeight 100ms ease-in-out 330ms 1 forwards ;
   }
   
-  
   /* Animated After Class Animation */
+
   @keyframes BeforeClassHeight {
     100%{
       border-right: 2px solid #01eefe;
       height: 100%;
     }
   }
-  
-
   
   .llll{
     display: flex;
@@ -173,17 +154,14 @@ body::-webkit-scrollbar {
     margin: 0px !important;
   }
   
-  
   .hover_shadow:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-
 
   html,
     body {
       position: relative;
     }
-
 
     .swiper {
       width: 100%;
@@ -207,7 +185,6 @@ body::-webkit-scrollbar {
     }
 
 
-
 /*  */
 /* Responsiveness */
 /*  */
@@ -218,13 +195,11 @@ body::-webkit-scrollbar {
     padding-left:22px ;
   }
 }
-
 @media ( max-width: 400px ) {
   .responsive{
     padding-left:8px ;
   }
-}
-
+  }
 @media ( max-width: 1030px ) {
   .client_hidden{
     display: none !important;
@@ -233,7 +208,6 @@ body::-webkit-scrollbar {
     display: block !important;
   }
 }
-
 @media (max-width:400px) {
   .input-responsive{
     flex-direction: column;
