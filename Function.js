@@ -161,3 +161,11 @@ window.addEventListener('scroll' , () =>{
 
     }
 })
+
+// var myiii = document.querySelectorAll('.handleInput');
+
+// for (var i = 0; i < myiii.length; i++) {
+//     myiii[i].addEventListener('keyup' , function () {
+//         this.nextElementSibling.focus();
+//     })
+// }
