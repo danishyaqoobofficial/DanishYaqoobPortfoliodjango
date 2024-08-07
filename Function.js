@@ -88,11 +88,11 @@ function dropdown_func() {
     
 
     if (value == true) {
-        main_dropdown.classList.add('class_block');
+        main_dropdown.classList.add('!block');
         value = false;
         icon.classList.add('fa-xmark');
     }else{
-        main_dropdown.classList.remove('class_block');
+        main_dropdown.classList.remove('!block');
         value = true;
         icon.classList.remove('fa-xmark')
     }
