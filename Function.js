@@ -1,7 +1,8 @@
 const form = document.querySelector('.form_main');
 
 function send_message() {
-    let first_name = document.querySelector('.first_name'.trim());
+
+    let first_name = document.querySelector('.first_name');
     let last_name = document.querySelector('.last_name');
     let number = document.querySelector('.number');
     let email = document.querySelector('.email');
@@ -149,7 +150,7 @@ let header = document.querySelector('.header');
 let sticky = header.offsetTop;
 
 window.addEventListener('scroll' , () =>{
-    // console.log(sticky);
+
     if (window.pageYOffset > sticky) {
         header.classList.add('!shadow-md')
         header.classList.add('border-b')
