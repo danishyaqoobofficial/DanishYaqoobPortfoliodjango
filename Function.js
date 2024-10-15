@@ -153,11 +153,9 @@ window.addEventListener('scroll' , () =>{
 
     if (window.pageYOffset > sticky) {
         header.classList.add('!shadow-md')
-        header.classList.add('border-b')
         header.classList.add('bg-[#323846]')
     }else{
         header.classList.remove('!shadow-md')
-        header.classList.remove('border-b')
         header.classList.remove('bg-[#323846]')
 
     }
