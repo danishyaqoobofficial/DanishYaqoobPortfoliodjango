@@ -29,12 +29,6 @@ function send_message() {
         last_name.style.borderColor = '#323846';
     }
 
-    // if (number.value === '') {
-    //     number.style.borderColor = 'red';
-    // }else{
-    //     number.style.borderColor = '#323846';
-    // }
-
     if (email.value === '' || !email.value.includes('.com') || !email.value.includes('@') ) {
         email.style.borderColor = 'red';
     }else{
@@ -58,8 +52,6 @@ function send_message() {
                 Subject : "danishyaqoob.online | Portfolio",
                 Body : bodyMessage
             })
-        
-
     }else{
 
     }
@@ -101,50 +93,34 @@ function dropdown_func() {
 
 function web_development_service() {
     let message_box = document.querySelector('.message-box');
-
     message_box.value = '"Are you available to provide Web Development services for our upcoming project?"'
 }
 
 function app_development_service() {
     let message_box = document.querySelector('.message-box');
-
     message_box.value = '"Are you available to provide App Development services? We are interested in discussing a potential project."'
 }
 
 function graphic_design_service() {
     let message_box = document.querySelector('.message-box');
-
     message_box.value = '"Are you offering Graphic Design services? We are looking for assistance with our visual elements of project."'
 }
 
 function seo_service() {
     let message_box = document.querySelector('.message-box');
-
     message_box.value = '"Are you available to provide SEO services? We are seeking to enhance our online visibility and would appreciate your expertise."'
 }
 
 function video_editing_service() {
     let message_box = document.querySelector('.message-box');
-
     message_box.value = '"Are you available to provide Video Editing services? We are looking to enhance the quality of our visual content of project."'
 }
 
 function google_ads_service() {
     let message_box = document.querySelector('.message-box');
-
     message_box.value = '"Are you available to provide Google Ads services? We are interested in maximizing our online presence and would like to explore advertising options."'
 }
 
-// function home_btn() {
-//     let homebtn = document.querySelector('.homebtn');
-//     let homebtn_second = document.querySelector('.homebtn-second');
-
-//     if (homebtn) {
-//         homebtn.style.color = '#01eefe';
-//         homebtn_second.classList.add('w-full');
-//         homebtn_second.classList.add('left-0');
-//     }
-// }
 
 let header = document.querySelector('.header');
 let sticky = header.offsetTop;
@@ -157,6 +133,5 @@ window.addEventListener('scroll' , () =>{
     }else{
         header.classList.remove('!shadow-md')
         header.classList.remove('bg-[#323846]')
-
     }
 })
