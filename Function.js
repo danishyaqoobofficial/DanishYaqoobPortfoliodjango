@@ -65,7 +65,6 @@ function closePopup() {
     let message = document.querySelector('.message');
     let Popup = document.querySelector('.popup');
     Popup.classList.remove('top');
-    // window.location.reload();
     first_name.value = '';
     last_name.value  = '';
     email.value = '';
@@ -78,7 +77,6 @@ let value = true;
 function dropdown_func() {
     let main_dropdown = document.querySelector('.main-dropdown');
     let icon = document.querySelector('.dropdown_realicon');
-    
 
     if (value == true) {
         main_dropdown.classList.add('!block');
