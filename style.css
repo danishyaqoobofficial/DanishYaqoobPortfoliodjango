@@ -1,3 +1,6 @@
+  html {
+    scroll-behavior: smooth;
+  }
 
   body::-webkit-scrollbar {
     width: 6px;
@@ -16,10 +19,7 @@
   body::-webkit-scrollbar-thumb:hover {
     background: #596070;
   }
-  
-  html {
-    scroll-behavior: smooth;
-  }
+
 
   body{
     background-color: #20242d;
@@ -144,16 +144,6 @@
     }
   }
   
-  .llll{
-    display: flex;
-    width: calc(250px * 18);
-    animation: scroll 20s linear infinite;
-  }
-  
-  .remove_margin{
-    margin: 0px !important;
-  }
-  
   .hover_shadow:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
@@ -225,4 +215,9 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+.top{
+  top: 50% !important;
+  transition: all 0.5s !important;
 }
