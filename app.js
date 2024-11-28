@@ -11,10 +11,10 @@ function send_message() {
     let Popup = document.querySelector('.popup');
 
     const bodyMessage = `First Name : ${first_name.value.trim()} <br>
-    last Name : ${last_name.value.trim()} <br>
-    Phone Number : ${number.value.trim()} <br>
-    Email : ${email.value.trim()} <br>
-    Message : ${message.value.trim()} <br>
+        last Name : ${last_name.value.trim()} <br>
+        Phone Number : ${number.value.trim()} <br>
+        Email : ${email.value.trim()} <br>
+        Message : ${message.value.trim()} <br>
     `
 
     if (first_name.value === '') {
@@ -43,15 +43,15 @@ function send_message() {
 
     if (first_name.value !== '' && last_name.value !== '' && email.value !== '' && email.value.includes('.com') && email.value.includes('@') && message.value !== '' ) {
         Popup.classList.add('top');
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "danishyaqoob117@gmail.com",
-                Password : "3562C4A222A82FA3309911A62CDA47560C3F",
-                To : 'danishyaqoob117@gmail.com',
-                From : "danishyaqoob117@gmail.com",
-                Subject : "danishyaqoob.online | Portfolio",
-                Body : bodyMessage
-            })
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "danishyaqoob117@gmail.com",
+            Password : "3562C4A222A82FA3309911A62CDA47560C3F",
+            To : 'danishyaqoob117@gmail.com',
+            From : "danishyaqoob117@gmail.com",
+            Subject : "danishyaqoob.online | Portfolio",
+            Body : bodyMessage
+        });
     }else{
 
     }
