@@ -3,10 +3,7 @@ function dropdown_func() {
     main_dropdown.classList.toggle('!block');
 }
 
-const form = document.querySelector('.form_main');
-
 function send_message() {
-
     let first_name = document.querySelector('.first_name');
     let last_name = document.querySelector('.last_name');
     let number = document.querySelector('.number');
@@ -56,9 +53,7 @@ function send_message() {
             Subject : "danishyaqoob.online | Portfolio",
             Body : bodyMessage
         });
-    }else{
-
-    }
+    }else{}
 }
 
 function closePopup() {
@@ -97,17 +92,9 @@ function google_ads_service() {
     message_box.value = '"Are you available to provide Google Ads services? We are interested in maximizing our online presence and would like to explore advertising options."'
 }
 
-
-let header = document.querySelector('.header');
-let sticky = header.offsetTop;
-
-window.addEventListener('scroll' , () =>{
-
-    if (window.pageYOffset > sticky) {
-        header.classList.add('!shadow-md')
-        header.classList.add('bg-[#323846]')
-    }else{
-        header.classList.remove('!shadow-md')
-        header.classList.remove('bg-[#323846]')
-    }
-})
+window.addEventListener('scroll', () => {
+    let header = document.querySelector('.header');
+    
+    header.classList.toggle('!shadow-md', window.pageYOffset > header.offsetTop);
+    header.classList.toggle('bg-[#323846]', window.pageYOffset > header.offsetTop);
+});
