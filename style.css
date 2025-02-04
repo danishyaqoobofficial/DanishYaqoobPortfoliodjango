@@ -118,11 +118,9 @@ body{
   .animated_box:hover::before{
     transform: translateX(0);
     opacity: 1;
-    
     animation: BeforeClassHeight 100ms ease-in-out 330ms 1 forwards ;
   }
   
-
   @keyframes BeforeClassHeight {
     100%{
       border-right: 2px solid #01eefe;
@@ -134,44 +132,22 @@ body{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
+  @media (max-width:400px) {
+    .image{
+      width: 300px;
+    }
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
-@media ( max-width: 500px ) {
-  .responsive{
-    padding-left:22px ;
+  input[type=number] {
+    -moz-appearance: textfield;
   }
-}
-@media ( max-width: 400px ) {
-  .responsive{
-    padding-left:8px ;
-  }
-  }
-@media ( max-width: 1030px ) {
-  .client_hidden{
-    display: none !important;
-  }
-  .client_block{
-    display: block !important;
-  }
-}
-@media (max-width:400px) {
-  .input-responsive{
-    flex-direction: column;
-  }
-  .image{
-    width: 300px;
-  }
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-.top{
-  top: 50% !important;
-  transition: all 0.5s !important;
-}
+  .top{
+    top: 50% !important;
+    transition: all 0.5s !important;
+  }
