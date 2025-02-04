@@ -1,33 +1,28 @@
-  html {
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  body::-webkit-scrollbar {
-    width: 6px;
-  }
+body::-webkit-scrollbar {
+  width: 6px;
+}
 
-  body::-webkit-scrollbar-track {
-    background: #20242d;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background: #01eefe;
-    border-radius: 50px;
-    cursor: pointer !important;
-  }
-  
-  body::-webkit-scrollbar-thumb:hover {
-    background: #596070;
-  }
+body::-webkit-scrollbar-track {
+  background: #20242d;
+}
 
+body::-webkit-scrollbar-thumb {
+  background: #01eefe;
+  border-radius: 50px;
+  cursor: pointer !important;
+}
 
-  body{
-    background-color: #20242d;
-    scroll-behavior: smooth !important;
-  }
+body::-webkit-scrollbar-thumb:hover {
+  background: #596070;
+}
 
-.transition-two-second{
-    transition: all 0.2s ease-in-out;
+body{
+  background-color: #20242d;
+  scroll-behavior: smooth !important;
 }
 
 .transition-three-second{
@@ -42,22 +37,14 @@
     transform: scale(1.2);
 }
 
-.transorm-scale1:hover{
-    transform: scale(1.1);
-  }
-  
   .shadow:hover{
     box-shadow: #01eefe 0px 22px 70px 4px;
   }
-  
   
   .number_input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
-
-  /*  */
-  /*  */
 
   .client_box:nth-last-child(2),
   .client_box:nth-last-child(3),
@@ -135,7 +122,6 @@
     animation: BeforeClassHeight 100ms ease-in-out 330ms 1 forwards ;
   }
   
-  /* Animated After Class Animation */
 
   @keyframes BeforeClassHeight {
     100%{
@@ -147,37 +133,6 @@
   .hover_shadow:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-
-  html,
-    body {
-      position: relative;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-
-/*  */
-/* Responsiveness */
-/*  */
 
 
 @media ( max-width: 500px ) {
@@ -212,7 +167,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }

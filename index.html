@@ -10,199 +10,167 @@
     <title>Danish Yaqoob | Portfolio</title>
 </head>
 <body>
-      <div class="rounded-lg bg-white max-w-[420px] w-full p-3 fixed -top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-50 popup transition-five-second ">
-        <span class="bg-[#01eefe] rounded-full ml-2 h-[100px] md:h-[110px] w-[100px] md:w-[110px] flex items-center justify-center absolute translate-y-[50%] -translate-x-[50%] -top-[36%] left-[50%] ">
-          <svg class="fill-white size-10 md:size-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+    <header class="sticky top-0 bg-[#20242d] z-50 transition-all header">
+      <div class="flex items-center justify-between max-w-[1350px] px-4 md:px-5 mx-auto py-3 sm:py-0">
+        <span class="flex select-none cursor-pointer items-center text-xl md:text-3xl justify-center text-[#01eefe] font-semibold">
+            Portfolio.
         </span>
-        <div class="px-[8px] md:px-5 pt-24 ">
-          <h2 class="text-2xl md:text-3xl font-semibold text-center text-[#313131] ">Thank You!</h2>
-          <p class="text-[#797979] text-center text-sm mt-2.5 ">Your message has been successfully submitted. Our team will contact you as soon as possible. Thanks!</p>
+        <div class="block sm:hidden">
+          <div class="flex items-center justify-center" onclick="dropdown_func()" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-5 dropdown_realicon fill-white cursor-pointer" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+          </div>
         </div>
-        <div onclick="closePopup()" class=" rounded-lg select-none font-semibold w-full flex items-center mt-8 justify-center py-2 text-white cursor-pointer bg-[#01eefe] ">
-          Ok
-        </div>
-      </div>
-
-      <!--  -->
-
-    <header class="sticky top-0 bg-[#20242d] z-50 header border-slate-500 transition-all">
-        <div class="flex items-center justify-between max-w-[1280px] px-4 md:px-5 mx-auto py-3 sm:py-0 ">
-            <a href="/" class="flex select-none cursor-pointer items-center text-xl md:text-3xl justify-center text-[#01eefe] font-semibold ">
-                Portfolio.
-            </a>
-            <div class="block sm:hidden">
-              <div class="flex items-center justify-center " onclick="dropdown_func()" >
-                <svg xmlns="http://www.w3.org/2000/svg" class="size-5 dropdown_realicon fill-white cursor-pointer" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-              </div>
-            </div>
-            <div class="sm:block hidden">
-                <div class="flex items-center px-3 md:px-4 ">
-                    <a onclick="home_btn()" href="#home" class="text-white homebtn px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer ">
-                        <div class="homebtn-second absolute left-[50%] rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0 "></div>
-                        Home
-                    </a>
-                    <a href="#about_me" class="text-white px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer ">
-                        <div class=" absolute left-[50%] rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0 "></div>
-                        About
-                    </a>
-                    <a href="#services" class="text-white px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer " >
-                        <div class=" absolute left-[50%] rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0 "></div>
-                        Services
-                    </a>
-                    <a href="#projects" class="text-white px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer " >
-                        <div class=" absolute left-[50%] rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0 "></div>
-                        Projects
-                    </a>
-                    <a href="#contact_me" class="text-white px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer " >
-                        <div class=" absolute left-[50%] rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0 "></div>
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class=" mx-auto w-[92%] pb-[18px] main-dropdown hidden sm:hidden ">
-          <a href="#home" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-[6px] px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer ">Home</a>
-          <a href="#about_me" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-[6px] px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer ">About</a>
-          <a href="#services" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-[6px] px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer ">Services</a>
-          <a href="#projects" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-[6px] px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer ">Projects</a>
-          <a href="#contact_me" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-[6px] px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer ">Contact</a>
-        </div>
-    </header>
-
-    <!--  -->
-
-    <Section id="home" class=" w-full">
-        <div class="flex gap-9 items-center max-w-[1280px] lg:flex-row flex-col px-4 sm:px-5 mx-auto pt-[40px] sm:pt-[80px] md:pt-[100px] ">
-            <div class="flex-1 ">
-            <h3 class="text-[17px] sm:text-xl md:text-[22px] text-white font-bold ">Hello, it&apos;s Me!</h3>
-            <h2 class="text-[34px] sm:text-[38px] md:text-[50px] text-white font-black">Danish Yaqoob</h2>
-            <h2 class="text-[17px] sm:text-xl md:text-[25px] text-white font-bold flex items-center gap-1 line-clamp-1 "><p class=" whitespace-nowrap">and i&apos;m senior</p> <p class="text-[#01eefe] line-clamp-1 "> Frontend Developer.</p></h2>
-            <p class="text-[#ffffffbe] text-[12px] md:text-[13px] sm:text-sm mt-[16px] md:mt-5 font-medium ">Crafting intuitive user interfaces with precision and creativity, transforming concepts into seamless, functional designs. Committed to enhancing user experiences through responsive, interactive web solutions that blend performance and aesthetics.</p>
-            <div class="flex items-center gap-2 md:gap-3 mt-5 ">
-                <a target="blank" href="https://wa.me/+923017735045" class="rounded-[50%] border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center h-[28px] md:h-[30px] w-[28px] md:w-[30px] "><svg class="size-4 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
-                <a target="blank" href="https://www.linkedin.com/in/danish-yaqoob-36a42a262/?originalSubdomain=pk" class="rounded-[50%] border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center h-[28px] md:h-[30px] w-[28px] md:w-[30px] "><svg class="size-4 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg></a>
-                <a target="blank" href="https://github.com/danishyaqoobofficial" class="rounded-[50%] border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center h-[28px] md:h-[30px] w-[28px] md:w-[30px] "><svg class="size-4 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
-                <a target="blank" href="https://www.facebook.com/danishyaqoobofficial" class="rounded-[50%] border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center h-[28px] md:h-[30px] w-[28px] md:w-[30px] "><svg class="size-4 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a>
-                <a target="blank" href="https://www.youtube.com/@DanishYaqoobOfficial" class="rounded-[50%] border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center h-[28px] md:h-[30px] w-[28px] md:w-[30px] "><svg class="size-4 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
-                <a target="blank" href="https://www.instagram.com/danishyaqoobofficial/" class="rounded-[50%] border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center h-[28px] md:h-[30px] w-[28px] md:w-[30px] "><svg class="size-4 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
-            </div>
-            <a href="#contact_me" class="rounded-full inline-block shadow px-5 md:px-[23px] py-[8px] md:py-[9px] text-[14px] md:text-sm transorm-scale font-bold transition-three-second mt-[22px] max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                Contact me
-            </a>
-            </div>
-            <div class="image w-[270px] sm:w-[440px] md:w-[480px]">
-              <div class=" bg-cover bg-no-repeat rounded-[50%] w-[280px] sm:w-[360px] md:w-[400px] h-[280px] sm:h-[360px] md:h-[400px] " style="background-image: url(/images/DSC_1667.JPG);" ></div>
-            </div>
-        </div>
-    </Section>
-
-    <!--  -->
-
-    <section id="about_me" class="bg-[#323846] w-full mt-[45px] sm:mt-[60px] md:mt-[80px] lg:mt-[90px] pt-5 pb-[60px]  ">
-        <div class="max-w-[1280px] mx-auto px-[15px] md:px-5 flex items-center gap-[22px] lg:flex-row flex-col py-[32px] ">
-          <!-- <div class="flex items-center justify-center w-[280px] sm:w-[440px] md:w-[480px] ">
-            <div class=" bg-cover bg-no-repeat rounded-[50%] w-[280px] sm:w-[360px] md:w-[400px] h-[280px] sm:h-[360px] md:h-[400px] " style="background-image: url(/images/DSC_1667.JPG);" >
-
-            </div>
-          </div> -->
-          <div class="flex-1 pt-[22px] lg:pt-[0px] ">
-            <h2 class="text-[24px] md:text-[28px] font-[800] text-white ">About <span class="text-[#01eefe] ">Me</span></h2>
-            <p class=" text-white font-medium text-sm md:text-[16px] ">Senior Frontend Developer,</p>
-            <p class="mt-[14px] text-[#ffffffbe] text-[14px] md:text-sm font-medium ">
-              As a Senior Frontend Web Developer with 4 years of experience, I specialize in crafting user-facing components of websites and web applications. My expertise includes transforming design mockups into interactive, responsive, and visually appealing interfaces using HTML, CSS, and JavaScript. Additionally, I have extensive experience working with modern frameworks like React.js and Next.js, enabling me to build dynamic, high-performance web applications. I focus on optimizing user experiences through seamless navigation, fast load times, and cross-browser compatibility. With a passion for clean, efficient code and a keen eye for design, I stay updated on the latest frontend trends and best practices to deliver cutting-edge digital solutions. Driven by innovation, I aim to create web experiences that not only meet but exceed user expectations.
-            </p>
-            <div class="mt-[30px] flex items-center gap-[8px] ">
-                <a href="/images/Resume_CV.pdf" download class="rounded-full shadow px-5 md:px-[23px] py-[8px] md:py-[9px] text-[14px] md:text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                    Download CV
+        <div class="sm:block hidden">
+            <div class="flex items-center px-3 md:px-4">
+                <a onclick="home_btn()" href="#home" class="text-white homebtn px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer">
+                    <div class="homebtn-second absolute left-1/2 rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0"></div>
+                    Home
+                </a>
+                <a href="#about_me" class="text-white px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer">
+                    <div class=" absolute left-1/2 rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0"></div>
+                    About
+                </a>
+                <a href="#services" class="text-white px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer">
+                    <div class=" absolute left-1/2 rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0"></div>
+                    Services
+                </a>
+                <a href="#projects" class="text-white px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer">
+                    <div class=" absolute left-1/2 rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0"></div>
+                    Projects
+                </a>
+                <a href="#contact_me" class="text-white px-4 md:px-5 select-none py-3 sm:py-4 md:py-5 lg:py-6 relative text-xs md:text-sm font-semibold group transition-three-second hover:text-[#01eefe] cursor-pointer">
+                    <div class=" absolute left-1/2 rounded-full top-0 w-0 bg-[#01eefe] inset-0 h-1 transition-three-second group-hover:w-full group-hover:left-0"></div>
+                    Contact
                 </a>
             </div>
-          </div>
         </div>
+      </div>
+      <div class="mx-auto pb-3 main-dropdown hidden sm:hidden">
+        <a href="#home" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-1.5 px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer">Home</a>
+        <a href="#about_me" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-1.5 px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer">About</a>
+        <a href="#services" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-1.5 px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer">Services</a>
+        <a href="#projects" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-1.5 px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer">Projects</a>
+        <a href="#contact_me" class="w-full inline-block text-white hover:bg-[#01eefe] transition-three-second py-1.5 px-5 text-sm font-semibold hover:text-[#20242d] cursor-pointer">Contact</a>
+      </div>
+    </header>
+    <Section id="home" class="w-full">
+      <div class="flex gap-9 items-center max-w-[1350px] lg:flex-row flex-col px-4 sm:px-5 mx-auto py-10 sm:py-20 md:py-24">
+        <div class="flex-1 space-y-5">
+          <div class="space-y-1">
+            <h3 class="text-[16px] sm:text-xl md:text-xl text-white font-bold">Hello, it's Me!</h3>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl text-white font-black">Danish Yaqoob</h2>
+            <h2 class="text-[17px] sm:text-xl md:text-2xl text-white font-bold flex items-center gap-1 line-clamp-1"><p class="whitespace-nowrap">and i'm senior</p><p class="text-[#01eefe] line-clamp-1">Frontend Web Developer.</p></h2>
+            <p class="text-[#ffffffbe] text-xs sm:text-sm font-medium">Designing intuitive user interfaces with precision and creativity, turning ideas into seamless, functional experiences. Dedicated to elevating user engagement through responsive, interactive web solutions that balance performance and aesthetics.</p>
+          </div>
+          <div class="flex items-center gap-2 md:gap-3">
+              <a target="blank" href="https://wa.me/+923017735045" class="rounded-full border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center size-7"><svg class="size-3.5 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
+              <a target="blank" href="https://www.linkedin.com/in/danish-yaqoob-36a42a262/?originalSubdomain=pk" class="rounded-full border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center size-7"><svg class="size-3.5 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg></a>
+              <a target="blank" href="https://github.com/danishyaqoobofficial" class="rounded-full border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center size-7"><svg class="size-3.5 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+              <a target="blank" href="https://www.facebook.com/danishyaqoobofficial" class="rounded-full border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center size-7"><svg class="size-3.5 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a>
+              <a target="blank" href="https://www.youtube.com/@DanishYaqoobOfficial" class="rounded-full border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center size-7"><svg class="size-3.5 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+              <a target="blank" href="https://www.instagram.com/danishyaqoobofficial/" class="rounded-full border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center size-7"><svg class="size-3.5 fill-[#01eefe]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+          </div>
+          <a href="#contact_me" class="rounded-full inline-block shadow px-5 md:px-6 py-2 text-xs md:text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe]">
+              Contact me
+          </a>
+        </div>
+        <div class="image w-[270px] sm:w-[440px] md:w-[480px]">
+          <div class="bg-cover bg-no-repeat rounded-full w-[280px] sm:w-[360px] md:w-[400px] h-[280px] sm:h-[360px] md:h-[400px]" style="background-image: url(/images/DSC_1667.png);"></div>
+        </div>
+      </div>
+    </Section>
+    <section id="about_me" class="bg-[#323846] w-full py-5">
+      <div class="max-w-[1350px] mx-auto px-4 md:px-5 py-8 space-y-5">
+        <div class="space-y-3">
+          <div>
+            <h2 class="text-[24px] md:text-[28px] font-extrabold text-white">About <span class="text-[#01eefe]">Me</span></h2>
+            <p class="text-white font-medium text-sm md:text-[15px]">Senior Frontend Developer!</p>
+          </div>
+          <p class="text-[#ffffffbe] text-xs md:text-sm font-medium">As a Senior Frontend Web Developer with 3 years of experience, I specialize in crafting user-facing components of websites and web applications. My expertise includes transforming design mockups into interactive, responsive, and visually appealing interfaces using HTML, CSS, and JavaScript. Additionally, I have extensive experience working with modern frameworks like React.js and Next.js, enabling me to build dynamic, high-performance web applications. I focus on optimizing user experiences through seamless navigation, fast load times, and cross-browser compatibility. With a passion for clean, efficient code and a keen eye for design, I stay updated on the latest frontend trends and best practices to deliver cutting-edge digital solutions. Driven by innovation, I aim to create web experiences that not only meet but exceed user expectations.</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <a href="/images/Resume_CV.pdf" download class="rounded-full shadow px-5 md:px-6 py-2 md:py-2.5 text-xs md:text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe]">
+                Download CV
+            </a>
+        </div>
+      </div>
     </section>
-
-    <!--  -->
-
-    <section id="services" class=" w-full  ">
-        <div class="max-w-[1280px] mx-auto px-[15px] md:px-5 py-[60px] ">
-        <h2 class=" text-[24px] md:text-[28px] font-[800] text-white text-center ">My <span class="text-[#01eefe] ">Services</span></h2>
-          <div class="flex items-center responsive gap-[12px] md:gap-[16px] flex-wrap justify-center py-[32px] ">
-            <div class="swiper mySwiper max-w-[1240px] mx-auto h-[400px]  ">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide bg-transparent max-h-max max-w-max ">
-                  <div class="rounded-[8px] flex flex-col items-center px-[18px] py-[30px] bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
-                    <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
-                    <h2 class="text-white text-[18px] font-semibold mt-[12px] ">Web Development</h2>
-                    <span class="text-[#ffffffbe] font-medium text-[13px] text-center mt-[8px] "><p class="px-[8px] ">Our web development service</p> creates custom, innovative solutions to enhance your online presence and engage your audience effectively with modern design.</span>
-                      <a href="#contact_me" onclick="web_development_service()" class="rounded-full mt-[15px] shadow px-[23px] py-[9px] text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                        Service Now
-                      </a>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-transparent max-h-max max-w-max ">
-                  <div class="rounded-[8px] flex flex-col items-center px-[18px] py-[30px] bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
-                    <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-                    <h2 class="text-white text-[18px] font-semibold mt-[12px] ">App Development</h2>
-                    <span class="text-[#ffffffbe] font-medium text-[13px] text-center mt-[8px] "><p class="px-[8px] ">Our app development service</p> crafts innovative solutions to bring your ideas to life, ensuring seamless functionality and engaging user experiences.</span>
-                      <a href="#contact_me" onclick="app_development_service()" class="rounded-full mt-[15px] shadow px-[23px] py-[9px] text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                        Service Now
-                      </a>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-transparent max-h-max max-w-max ">
-                  <div class="rounded-[8px] flex flex-col items-center px-[18px] py-[30px] bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
-                    <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M481 31C445.1-4.8 386.9-4.8 351 31l-15 15L322.9 33C294.8 4.9 249.2 4.9 221.1 33L135 119c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L255 66.9c9.4-9.4 24.6-9.4 33.9 0L302.1 80 186.3 195.7 316.3 325.7 481 161c35.9-35.9 35.9-94.1 0-129.9zM293.7 348.3L163.7 218.3 99.5 282.5c-48 48-80.8 109.2-94.1 175.8l-5 25c-1.6 7.9 .9 16 6.6 21.7s13.8 8.1 21.7 6.6l25-5c66.6-13.3 127.8-46.1 175.8-94.1l64.2-64.2z"/></svg>
-                    <h2 class="text-white text-[18px] font-semibold mt-3 ">Graphic Design</h2>
-                    <span class="text-[#ffffffbe] font-medium text-[13px] text-center mt-[8px] "><p class="px-[8px] ">Our graphic design service</p> delivers visually stunning solutions that captivate audiences, enhancing brand identity and communication across various platforms effectively.</span>
-                      <a href="#contact_me" onclick="graphic_design_service()" class="rounded-full mt-[15px] shadow px-[23px] py-[9px] text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                        Service Now
-                      </a>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-transparent max-h-max max-w-max ">
-                  <div class="rounded-[8px] flex flex-col items-center px-[18px] py-[30px] bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
-                    <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-                    <h2 class="text-white text-[18px] font-semibold mt-[12px] ">SEO</h2>
-                    <span class="text-[#ffffffbe] font-medium text-[13px] text-center mt-[8px] "><p class="px-[8px] ">Our SEO service</p> optimizes your online presence, improving search engine rankings and driving organic traffic to maximize your digital visibility.</span>
-                      <a href="#contact_me" onclick="seo_service()" class="rounded-full mt-[15px] shadow px-[23px] py-[9px] text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                        Service Now
-                      </a>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-transparent max-h-max max-w-max ">
-                  <div class="rounded-[8px] flex flex-col items-center px-[18px] py-[30px] bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
-                    <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg>
-                    <h2 class="text-white text-[18px] font-semibold mt-[12px] ">Video Editing</h2>
-                    <span class="text-[#ffffffbe] font-medium text-[13px] text-center mt-[8px] "><p class="px-[8px] ">Our video editing service</p> refines your footage with precision, enhancing storytelling and visual appeal to create compelling narratives and content.</span>
-                      <a href="#contact_me" onclick="video_editing_service()" class="rounded-full mt-[15px] shadow px-[23px] py-[9px] text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                        Service Now
-                      </a>
-                  </div>
-                </div>
-                <div class="swiper-slide bg-transparent max-h-max max-w-max ">
-                  <div class="rounded-[8px] flex flex-col items-center px-[18px] py-[30px] bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
-                    <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M384 32h-64l-80.7 192h-94.5L64 32H0l48 112H0v48h68.5l13.8 32H0v48h102.8L192 480l89.2-208H384v-48h-82.3l13.8-32H384v-48h-48l48-112zM192 336l-27-64h54l-27 64z"/></svg>
-                    <h2 class="text-white text-[18px] font-semibold mt-[12px] ">Google Ads</h2>
-                    <span class="text-[#ffffffbe] font-medium text-[13px] text-center mt-[8px] "><p class="px-[8px] ">Our Google Ads service</p> maximizes your online reach, leveraging targeted campaigns and strategic optimization to drive traffic and boost conversions effectively.</span>
-                      <a href="#contact_me" onclick="google_ads_service()" class="rounded-full mt-[15px] shadow px-[23px] py-[9px] text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                        Service Now
-                      </a>
-                  </div>
+    <section id="services" class="w-full">
+      <div class="max-w-[1350px] mx-auto px-4 md:px-5 pt-14 pb-4 space-y-7">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-white text-center">My <span class="text-[#01eefe]">Services</span></h2>
+        <div class="flex items-center responsive gap-3 md:gap-4 flex-wrap justify-center">
+          <div class="swiper mySwiper max-w-[1350px] mx-auto h-[360px]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-transparent max-h-max max-w-max">
+                <div class="rounded-lg space-y-3 flex flex-col items-center px-5 py-7 bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second">
+                  <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                  <h2 class="text-white text-lg font-semibold">Web Development</h2>
+                  <span class="text-[#ffffffbe] font-medium text-[13px] text-center !mt-1"><p>Our web development service</p> creates custom, innovative solutions to enhance your online presence and engage your audience effectively with modern design.</span>
+                  <a href="#contact_me" onclick="web_development_service()" class="rounded-full shadow px-6 py-2 text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe]">
+                    Service Now
+                  </a>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-slide bg-transparent max-h-max max-w-max ">
+                <div class="rounded-lg flex flex-col space-y-3 items-center px-5 py-7 bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second">
+                  <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                  <h2 class="text-white text-lg font-semibold">App Development</h2>
+                  <span class="text-[#ffffffbe] font-medium text-[13px] text-center !mt-1"><p class="px-[8px]">Our app development service</p> crafts innovative solutions to bring your ideas to life, ensuring seamless functionality and engaging user experiences.</span>
+                  <a href="#contact_me" onclick="app_development_service()" class="rounded-full shadow px-6 py-2 text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe]">
+                    Service Now
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide bg-transparent max-h-max max-w-max">
+                <div class="rounded-lg flex flex-col space-y-3 items-center px-5 py-7 bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second">
+                  <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M481 31C445.1-4.8 386.9-4.8 351 31l-15 15L322.9 33C294.8 4.9 249.2 4.9 221.1 33L135 119c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0L255 66.9c9.4-9.4 24.6-9.4 33.9 0L302.1 80 186.3 195.7 316.3 325.7 481 161c35.9-35.9 35.9-94.1 0-129.9zM293.7 348.3L163.7 218.3 99.5 282.5c-48 48-80.8 109.2-94.1 175.8l-5 25c-1.6 7.9 .9 16 6.6 21.7s13.8 8.1 21.7 6.6l25-5c66.6-13.3 127.8-46.1 175.8-94.1l64.2-64.2z"/></svg>
+                  <h2 class="text-white text-lg font-semibold">Graphic Design</h2>
+                  <span class="text-[#ffffffbe] font-medium text-[13px] text-center !mt-1"><p class="px-[8px] ">Our graphic design service</p> delivers visually stunning solutions that captivate audiences, enhancing brand identity and communication across various platforms effectively.</span>
+                    <a href="#contact_me" onclick="graphic_design_service()" class="rounded-full shadow px-6 py-2 text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe]">
+                      Service Now
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide bg-transparent max-h-max max-w-max">
+                <div class="rounded-lg flex flex-col space-y-3 items-center px-5 py-7 bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
+                  <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                  <h2 class="text-white text-lg font-semibold">SEO</h2>
+                  <span class="text-[#ffffffbe] font-medium text-[13px] text-center !mt-1"><p class="px-4">Our SEO service</p> optimizes your online presence, improving search engine rankings and driving organic traffic to maximize your digital visibility.</span>
+                    <a href="#contact_me" onclick="seo_service()" class="rounded-full shadow px-6 py-2 text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe]">
+                      Service Now
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide bg-transparent max-h-max max-w-max">
+                <div class="rounded-lg flex flex-col space-y-3 items-center px-5 py-7 bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
+                  <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M0 128C0 92.7 28.7 64 64 64l256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2l0 256c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1l0-17.1 0-128 0-17.1 14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"/></svg>
+                  <h2 class="text-white text-lg font-semibold">Video Editing</h2>
+                  <span class="text-[#ffffffbe] font-medium text-[13px] text-center !mt-1"><p class="px-[8px] ">Our video editing service</p> refines your footage with precision, enhancing storytelling and visual appeal to create compelling narratives and content.</span>
+                    <a href="#contact_me" onclick="video_editing_service()" class="rounded-full shadow px-6 py-2 text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
+                      Service Now
+                    </a>
+                </div>
+              </div>
+              <div class="swiper-slide bg-transparent max-h-max max-w-max">
+                <div class="rounded-lg flex flex-col space-y-3 items-center px-5 py-7 bg-[#323846] h-[280px] w-[300px] cursor-default hover_shadow transition-three-second ">
+                  <svg class="fill-[#01eefe] size-4 md:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M384 32h-64l-80.7 192h-94.5L64 32H0l48 112H0v48h68.5l13.8 32H0v48h102.8L192 480l89.2-208H384v-48h-82.3l13.8-32H384v-48h-48l48-112zM192 336l-27-64h54l-27 64z"/></svg>
+                  <h2 class="text-white text-lg font-semibold">Google Ads</h2>
+                  <span class="text-[#ffffffbe] font-medium text-[13px] text-center !mt-1"><p class="px-[8px] ">Our Google Ads service</p> maximizes your online reach, leveraging targeted campaigns and strategic optimization to drive traffic and boost conversions effectively.</span>
+                    <a href="#contact_me" onclick="google_ads_service()" class="rounded-full shadow px-6 py-2 text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
+                      Service Now
+                    </a>
+                </div>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-      </section>
-
-    <!--  -->
-
-    <section id="projects"  class=" w-full bg-[#323846]">
-        <div class="px-[15px] md:px-5 max-w-[1280px] mx-auto py-[40px] sm:py-[50px] md:py-[60px]  ">
-
-          <!-- <div class="client_block hidden flex items-center justify-center "></div> -->
-          
-          <div class="flex items-center justify-center mt-[42px] flex-wrap relative z-0 client_hidden">
+      </div>
+    </section>
+    <section id="projects"  class="w-full bg-[#323846]">
+        <div class="px-4 md:px-5 max-w-[1350px] mx-auto py-10 sm:py-12 md:py-16 space-y-7">
+          <h2 class="text-2xl md:text-3xl font-extrabold text-white text-center">My <span class="text-[#01eefe]">Projects</span></h2>
+          <div class="flex items-center flex-wrap relative z-0 client_hidden">
             <div class="animated_box client_box z-0 first:border-l last:border-b h-[170px] sm:h-[200px] md:h-[220px] w-[175px] sm:w-[210px] md:w-[250px] justify-center flex items-center cursor-pointer border-r border-t border-[#596070] relative">
                 <div class="z-[1] relative p-4 h-full w-full flex grayscale group hover:grayscale-0 transition-three-second items-center justify-center">
                     <img src="/images/redexpo-removebg-preview copy.png" alt="" class="w-[80px] sm:w-[100px] md:w-[120px] group-hover:scale-125 transition-three-second" />
@@ -286,89 +254,88 @@
           </div>
         </div>
     </section>
+    <section id="contact_me" class="w-full">
+      <div class="py-10 sm:py-12 md:py-16 px-4 md:px-5 space-y-7">
+        <h2 class="text-2xl md:text-3xl text-center font-extrabold text-white">Contact <span class="text-[#01eefe] ">Me!</span></h2>
+        <form action="#" class="max-w-[550px] mx-auto form_main space-y-2">
+          <div class="flex items-center gap-2 w-full input-responsive ">
+            <input class="bg-[#323846] first_name outline-none rounded-md w-full flex-1 border border-[#323846] text-[#ffffffc7] text-xs md:text-[13px] px-3 py-2" type="text" placeholder="First Name"/>
+            <input class="bg-[#323846] last_name outline-none rounded-md w-full flex-1 border border-[#323846] text-[#ffffffc7] text-xs md:text-[13px] px-3 py-2" type="text" placeholder="Last Name"/>
+          </div>
+          <div class="flex items-center gap-2 w-full input-responsive">
+            <input class="bg-[#323846] number number_input outline-none rounded-md w-full flex-1 border border-[#323846] text-[#ffffffc7] text-xs md:text-[13px] px-3 py-2" type="text" placeholder="Phone Number"/>
+            <input class="bg-[#323846] email outline-none rounded-md w-full flex-1 border border-[#323846] text-[#ffffffc7] text-xs md:text-[13px] px-3 py-2" type="email" placeholder="Email Address"/>
+          </div>
+          <textarea class="resize-none w-full h-[240px] message message-box bg-[#323846] outline-none rounded-md flex-1 border border-[#323846] text-[#ffffffc7] text-xs md:text-[13px] px-3 py-2" name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          <div class="flex items-center justify-center !mt-4">
+            <a onclick="send_message()" class="rounded-full shadow px-5 md:px-6 py-2 text-xs md:text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe]">
+              Send Message
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="w-full bg-[#323846]">
+      <div class="max-w-[1350px] gap-2 mx-auto py-2 md:py-2.5 px-4 md:px-5 flex items-center justify-center">
+        <p class="text-[#ffffffbe] flex-1 text-xs md:text-[13px] font-medium line-clamp-1 text-center">Contact us for more information about our services and projects.</p>
+      </div>
+    </footer>
 
-    <!--  -->
 
-    <section id="contact_me" class=" w-full ">
-        <div class="py-[40px] sm:py-[50px] md:py-[60px] px-[15px] md:px-5 ">
-          <h2 class=" text-[24px] md:text-[28px] text-center font-[800] text-white ">Contact <span class="text-[#01eefe] ">Me!</span></h2>
-          <form action="#" class="mt-[30px] max-w-[550px] mx-auto form_main ">
-            <div class="flex items-center gap-[8px] w-full input-responsive ">
-              <!--  -->
-              
-              <!--  -->
-              <input class="bg-[#323846] first_name outline-none rounded-[4px] w-full flex-1 border border-[#323846] text-[#ffffffc7] text-[12px] md:text-[13px] px-[12px] py-[8px] " type="text" placeholder="First Name" />
-              <input class="bg-[#323846] last_name outline-none rounded-[4px] w-full flex-1 border border-[#323846] text-[#ffffffc7] text-[12px] md:text-[13px] px-[12px] py-[8px]" type="text" placeholder="Last Name" />
-            </div>
-            <div class="flex items-center gap-[8px] w-full input-responsive mt-[8px] ">
-              <input class="bg-[#323846] number number_input outline-none rounded-[4px] w-full flex-1 border border-[#323846] text-[#ffffffc7] text-[12px] md:text-[13px] px-[12px] py-[8px] " type="text" placeholder="Phone Number" />
-              <input class="bg-[#323846] email outline-none rounded-[4px] w-full flex-1 border border-[#323846] text-[#ffffffc7] text-[12px] md:text-[13px] px-[12px] py-[8px]" type="email" placeholder="Email Address" />
-            </div>
-            <textarea class=" resize-none w-full h-[240px] message message-box mt-[8px] bg-[#323846] outline-none rounded-[4px] flex-1 border border-[#323846] text-[#ffffffc7] text-[12px] md:text-[13px] px-[12px] py-[8px] " name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <div class="flex items-center justify-center pt-[18px] ">
-                <a onclick="send_message()" class="rounded-full shadow px-5 md:px-[23px] py-[8px] md:py-[9px] text-[14px] md:text-sm transorm-scale font-bold transition-three-second max-w-max cursor-pointer select-none text-[#20242d] bg-[#01eefe] ">
-                  Send Message
-                </a>
-            </div>
-          </form>
-        </div>
-      </section>
-      
-      <!--  -->
+    <div class="rounded-lg bg-white max-w-[420px] w-full p-3 fixed -top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] z-50 popup transition-five-second">
+      <span class="bg-[#01eefe] rounded-full h-[100px] md:h-[110px] w-[100px] md:w-[110px] flex items-center justify-center absolute translate-y-[50%] -translate-x-[50%] -top-[36%] left-[50%]">
+        <svg class="fill-white size-10 md:size-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+      </span>
+      <div class="px-2 md:px-5 pt-24 space-y-3">
+        <h2 class="text-2xl md:text-3xl font-semibold text-center text-[#313131]">Thank You!</h2>
+        <p class="text-[#797979] text-center text-sm">Your message has been successfully submitted. Our team will contact you as soon as possible. Thanks!</p>
+      </div>
+      <div onclick="closePopup()" class="rounded-lg select-none font-semibold w-full flex items-center mt-8 justify-center py-2 text-white cursor-pointer bg-[#01eefe]">
+        Ok
+      </div>
+    </div>
 
-      <footer class="w-full bg-[#323846] ">
-        <div class="max-w-[1280px] gap-[8px] mx-auto py-[8px] sm:py-[9px] md:py-[11px] px-[15px] md:px-5 flex items-center justify-between ">
-          <p class=" text-[#ffffffbe] flex-1 text-[12px] md:text-[13px] font-medium line-clamp-1 ">Visit our website for more information about our services and projects.</p>
-          <a target="blank" href="https://redexpo.pk/" class="rounded-[50%] border-[2px] border-[#01eefe] shadow transorm-scale transition-three-second cursor-pointer flex items-center justify-center h-[28px] md:h-[30px] w-[28px] md:w-[30px] ">
-            <svg class="fill-[#01eefe] size-3 md:size-4 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/></svg>
-          </a>
-        </div>
-      </footer>
-
-      <!--  -->
-
-      <script src="./app.js"></script>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script>
-        var swiper = new Swiper(".mySwiper", {
+    <script src="./app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        autoplay: {
+              delay: 1900,
+              disableOnInteraction: false,
+          },
+        breakpoints: {
+          100: {
           slidesPerView: 1,
           spaceBetween: 20,
-          pagination: {
-            el: ".swiper-pagination",
-            // clickable: true,
-          },
-          autoplay: {
-                delay: 1900,
-                disableOnInteraction: false,
-            },
-          breakpoints: {
-            100: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          }, 
-          600: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          900: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          1200: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-          1400: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
+        }, 
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 20,
         },
-        });
-      </script>
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        900: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1400: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+      });
+    </script>
 </body>
 </html>

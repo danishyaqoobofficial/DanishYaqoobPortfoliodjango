@@ -1,3 +1,8 @@
+function dropdown_func() {
+    let main_dropdown = document.querySelector('.main-dropdown');
+    main_dropdown.classList.toggle('!block');
+}
+
 const form = document.querySelector('.form_main');
 
 function send_message() {
@@ -70,23 +75,6 @@ function closePopup() {
     email.value = '';
     number.value = '';
     message.value = '';
-}
-
-let value = true;
-
-function dropdown_func() {
-    let main_dropdown = document.querySelector('.main-dropdown');
-    let icon = document.querySelector('.dropdown_realicon');
-
-    if (value == true) {
-        main_dropdown.classList.add('!block');
-        value = false;
-        icon.classList.add('fa-xmark');
-    }else{
-        main_dropdown.classList.remove('!block');
-        value = true;
-        icon.classList.remove('fa-xmark')
-    }
 }
 
 function web_development_service() {
