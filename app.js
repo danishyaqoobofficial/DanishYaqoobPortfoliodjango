@@ -12,7 +12,6 @@ function send_message() {
     let number = document.querySelector('.number');
     let email = document.querySelector('.email');
     let message = document.querySelector('.message');
-
     let Popup = document.querySelector('.popup');
 
     const bodyMessage = `First Name : ${first_name.value.trim()} <br>
@@ -63,18 +62,9 @@ function send_message() {
 }
 
 function closePopup() {
-    let first_name = document.querySelector('.first_name');
-    let last_name = document.querySelector('.last_name');
-    let number = document.querySelector('.number');
-    let email = document.querySelector('.email');
-    let message = document.querySelector('.message');
+    document.getElementById('form_main').reset();
     let Popup = document.querySelector('.popup');
     Popup.classList.remove('top');
-    first_name.value = '';
-    last_name.value  = '';
-    email.value = '';
-    number.value = '';
-    message.value = '';
 }
 
 function web_development_service() {
