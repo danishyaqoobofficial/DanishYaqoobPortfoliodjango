@@ -53,7 +53,9 @@ function send_message() {
             Subject : "danishyaqoob.online | Portfolio",
             Body : bodyMessage
         });
-    }else{}
+    }else{
+        
+    }
 }
 
 function closePopup() {
